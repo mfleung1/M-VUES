@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../Font-Awesome-3.2.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/Font-Awesome-3.2.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/slick-theme.css">
     <script src="../javascript/jquery-1.10.2.min.js"></script>
-    <script src="../bootstrap/js/dist/popper.min.js"></script>
-    <script src="../bootstrap/js/dist/util.js"></script>
-    <script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/js/dist/util.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../javascript/slick.min.js"></script>
     <!--[if IE 7]>
       <link rel="stylesheet" href="../Font-Awesome-3.2.1/css/font-awesome-ie7.min.css">
@@ -409,8 +409,8 @@
           </a>
         </div>
       </div>
-      <div class="row mains-contents-design">
-        <div class="col-auto mains-left">
+      <div class="row mains-contents-design clean-md-padding">
+        <div class="col-auto mains-left clean-md-padding">
           <div class="preferential-nav">
             <div clas="preferential-img">
               <a href="javascript:void();">
@@ -462,7 +462,7 @@
             </div>
           </div>
         </div>
-        <div class="col mains-right-design">
+        <div class="col mains-right-design clean-md-padding">
           <ol id="right-ul-item">
             <li class="rights-div">
               <a href="javascript:void()">
@@ -511,8 +511,8 @@
           </ol>
         </div>
       </div>
-      <div class="row">
-        <div class='mains-bottom-characteristic col-md-12' id='characteristic'>
+      <div class="row clean-md-padding">
+        <!-- <div class='mains-bottom-characteristic col-md-12' id='characteristic'>
           <div id="characteristic-name">
             <p>特色眼镜</p>
           </div>
@@ -602,7 +602,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -714,31 +714,24 @@
   </div>
   </body>
   <script>
-    $(function () {
+     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
       $('#example').tooltip({ boundary: 'window' });
-      $('.slick-home-item').slick({
-          dots: false,
-          infinite: true,
-          speed: 1000,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 565,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            } 
-          }]
-        });
+      // $('.slick-home-item').slick({
+      //     dots: false,
+      //     infinite: true,
+      //     speed: 1000,
+      //     slidesToShow: 4,
+      //     slidesToScroll: 4,
+      //     responsive: [
+      //     {
+      //       breakpoint: 580,
+      //       settings: {
+      //         slidesToShow: 1,
+      //         slidesToScroll: 1
+      //       } 
+      //     }]
+      //   });
 
       $('div.go-up-nav').click(function(event){
           $('body,html').animate({ scrollTop: 0 }, 550);
@@ -770,7 +763,7 @@
 
       $('#items-each').each(function(){
         $('div.master-navgition').find("div.general-div").mouseover(function(){
-          $(this).prev('a').css("border-bottom",'3px solid #111')
+          $(this).prev('a').css("border-bottom",'2px solid #111')
         }).mouseout(function(){
           $(this).prev('a').css("border",'none');
         });
