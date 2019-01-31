@@ -399,6 +399,10 @@
         </nav>
       </div>
     </header>
+    <div class="fixed-black d-md-none d-none" id='black-nav-responses'>
+      <div id="black-nav"></div>
+    </div>
+
     <div class="mains-content">
       <div class="home-banner-img">
         <img src='../image/home_image_header_2x.jpg' alt="" class="img-fluid d-md-block d-none" id="md-display-img"/>
@@ -765,7 +769,7 @@
         $('div.master-navgition').find("div.general-div").mouseover(function(){
           $(this).prev('a').css("border-bottom",'2px solid #111')
         }).mouseout(function(){
-          $(this).prev('a').css("border",'none');
+          $(this).prev('a').removeAttr("style");
         });
       })
     });

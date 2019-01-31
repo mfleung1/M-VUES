@@ -1,7 +1,7 @@
 body{margin:0;padding:0;font-size:1rem;}
 li,ol,ul{margin:0;padding:0;list-style:none;}
 a{color:#000;text-decoration:none;}
-header#header{position:relative;width:100%;}
+header#header{position:relative;width:100%;height: 150.5px;background: #fff;}
 header div#gray_tools{margin:0;padding:6px 0;width:100%;background-color:#000;color:#fff;text-align:center;}
 header div.black-nav{margin:0 auto;max-width:780px;text-align:center;}
 header div.black-nav div.list{position:relative;padding:0 5.5px;font-size:.85rem;z-index: 2;}
@@ -15,7 +15,7 @@ header .phones{width:100%;text-align:center;}
 div.list:hover .tooltip_item{position:absolute;top:26px;left:-100%;z-index:5;display:block;display:inherit;padding:21px;min-width:455px;box-shadow:0 3px 4px rgba(0,0,0,.2);}
 div.list:hover .tooltip_item_help{position:absolute;top:26px;left:-50%;display:block;display:inherit;padding:21px;min-width:191px;box-shadow:0 3px 4px rgba(0,0,0,.2);}
 div.tooltip_item_help .helps_list{padding:5.5px 0;border:none;text-align:left;}
-div.header_item{padding:8px 0 6px 0;width:100%;border-bottom:1px solid #d9d9d9;}
+div.header_item{padding: 8px 0 1px 0;width:100%;border-bottom:1px solid #d9d9d9;}
 div.header_item div.logo_head{margin:0 auto;width:100%;max-width:138px;min-width:100px;}
 div.head_right_compotent{display:inherit;padding-bottom:16px;width:100%;}
 div.head_right_compotent div#ico-search{display:inherit;width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-repeat:no-repeat;}
@@ -34,25 +34,18 @@ ul.ul-header-item{position:relative;left:-6px;}
 #div-margin{margin:0;padding:0 11px;}
 #nav-container{margin:0;padding:0 1px;}
 div.border_bottom_heads{width:100%;color:#575757;}
-div.border_bottom_heads div.home-header-item{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30px;
-    grid-column-gap: 7px;
-    position: relative;
-    top: 5px;
-}
+div.border_bottom_heads div.home-header-item{display: block;margin-top: 0px;}
 div.header_display_menus{margin:0 auto;max-width:1280px;}
-div.border_bottom_heads a{position:relative;top: 3.5px;margin:0 auto;padding-bottom:3.58px;color:#000;text-decoration:none;}
-div.border_bottom_heads div.master-navgition{margin-right: 1px;text-align: center;}
+div.border_bottom_heads a{position:relative;top: 2.6px;margin:0 auto;color:#000;text-decoration:none;padding: 1px 0px;height: 30.5px;vertical-align: middle;line-height: 1.9em;}
+div.border_bottom_heads div.master-navgition{margin-right: 1px;text-align: center;display: inline-grid;width: calc(99.99% / 6 - 6px - 1px);}
 div.border_bottom_heads a.menus-main:hover{border-bottom: 2px solid rgb(17, 17, 17);}
 div.general-other-item div.general-item{display:none;}
-div.home-header-item div#eyeglasses-men:hover .general-div{display:inherit!important;}
+div.home-header-item div#eyeglasses-men:hover .general-div{display: block;}
 div.home-header-item div#eyeglasses-women:hover .general-div{display:inherit!important;}
 div.home-header-item div#eyeglasses-kids:hover .general-div{display:inherit!important;}
 div.home-header-item div#sunglasses:hover .general-div{display:inherit!important;}
 div.home-header-item div#own-brand:hover .general-div{display:inline-block!important;}
-div.general-div{position:absolute;top: 33px;left:0;z-index:3;display:none;margin-top:0;padding:12px 0 14px 0;width:100%;border-bottom: 1px solid #d9d9d9;background:#fff;}
+div.general-div{position:absolute;top: 109px;left:0;z-index: 1;display: none;margin-top:0;padding:12px 0 14px 0;border-bottom: 1px solid #d9d9d9;background:#fff;width: 100%;}
 div.general-item{display:inherit;margin:0;margin:0 auto;padding:0 22px;width:100%;max-width:1280px;background:#fff;cursor:pointer;}
 div.general-item div.infos{padding-bottom:2px;}
 div.general-item div.infos{color:#969696;text-align:center;}
@@ -155,6 +148,8 @@ div.md-about-nav1 font.cross-buttona:after{display:inherit;width:24px;height:24p
 #own-brands-item div.general-item .brands-nav-home{position:relative;height:51px;}
 #own-brands-item div.brands-item ul li a:hover{color:#000;}
 @media only screen and (max-width:767px){div.home-banner-img div.buttons{top:9%;}
+header#header{height:auto;position: fixed;z-index: 1;top: 0;}
+div.mains-content{margin-top: 90.5px;}
 .clean-md-padding{padding: 0px !important;border: 0px !important;margin: 0px !important;}
 div.md-about-nav{border-bottom:1px solid #d9d9d9;}
 div.md-about-nav1{position:relative!important;padding:10px 0;width:100%;}
@@ -178,4 +173,12 @@ div.left-middle-news{margin-top: 4%;}
 div.left-middle-image img{display:block;max-width:none;width:200%;}
 div.left-middle-news div#contents{position:relative;width: 100%;max-width: none;padding: 21px 0;}
 div.mains-right-design{padding:0;}
+div.fixed-black{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
+}
+div.fixed-black #black-nav{background:#000;opacity: .5;height:100%;}
 }
