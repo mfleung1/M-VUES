@@ -57,7 +57,7 @@ ul.header_display_menus #eyeglasses-kids:hover .general-div{display:inherit!impo
 ul.header_display_menus #sunglasses:hover .general-div{display:inherit!important;}
 ul.header_display_menus #own-brand:hover .general-div{display:inline-block!important;}
 div.general-div{position:absolute;top:37.6px;left:0;z-index:1;display:none;margin-top:0;padding:13px 0 14px 0;width:100%;border-bottom:1px solid #d9d9d9;background:#fff;max-width: 1920px;}
-button#navbar-toggler{position:absolute;top: -49px;left: 10px;border:none;outline: unset;}
+button#navbar-toggler{position:absolute;top: -46px;left: 10px;border:none;outline: unset;}
 div.general-item{display:inherit;margin:0;margin:0 auto;padding:0 22px;width:100%;max-width:1280px;background:#fff;cursor:pointer;}
 div.general-item div.infos{padding-bottom:2px;}
 div.general-item div.infos{color:#969696;text-align:center;}

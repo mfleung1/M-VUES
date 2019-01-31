@@ -117,7 +117,10 @@
               </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-               <ul class="navbar-nav mr-auto container-fluid header_display_menus">
+               <ul class="navbar-nav mr-auto container-fluid header_display_menus clean-md-padding">
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='search'></div>
+                  </li>
                   <li class="nav-item active master-navgition" id="eyeglasses-men">
                     <div class="master-navgition clean-center"><a href="#" class="menus-main">男装</a></div>
                     <div class="general-div" id="woman">
@@ -396,8 +399,26 @@
                         </div>
                       </div>
                   </li>
-                  <li class="nav-item active master-navgition">
-                    <div class="master-navgition clean-center" id='my-glasses'><a href="#" class="menus-main">我们的镜片</a></div>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='optical-lenses'><a href="#" class="menus-main">高质光学镜片</a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='about'><a href="#" class="menus-main">关于</a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='Service-advices'><a href="#" class="menus-main">服务及意见</a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='registers'><a href="#" class="menus-main">注册</a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='Logins'><a href="#" class="menus-main">登录</a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='My-favorites'><a href="#" class="menus-main">我的最爱<span>(0)</span></a></div>
+                  </li>
+                  <li class="nav-item active master-navgition d-block d-md-none">
+                    <div class="master-navgition clean-center" id='monetary'><a href="#" class="menus-main"><span>￥</span>RMB</a></div>
                   </li>
                 </ul>
             </div>
@@ -733,16 +754,16 @@
           infinite: true,
           speed: 1000,
           slidesToShow: 4,
-          slidesToScroll: 4,
-          responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          }
-          ]
+          slidesToScroll: 4
+          // responsive: [
+          // {
+          //   breakpoint: 768,
+          //   settings: {
+          //     slidesToShow: 2,
+          //     slidesToScroll: 2
+          //   }
+          // }
+          // ]
         });
 
       $('div.go-up-nav').click(function(event){
