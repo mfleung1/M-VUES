@@ -119,7 +119,14 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                <ul class="navbar-nav mr-auto container-fluid header_display_menus clean-md-padding">
                   <li class="nav-item active master-navgition d-block d-md-none">
-                    <div class="master-navgition clean-center" id='search'></div>
+                    <div class="master-navgition clean-center" id='search'>
+                      <form>
+                        <div class="form-checkout">
+                          <input type="text" value="" placeholder="search value"/> 
+                        </div>
+                        <div id="ico-search" class="item"></div>
+                      </form>
+                    </div>
                   </li>
                   <li class="nav-item active master-navgition" id="eyeglasses-men">
                     <div class="master-navgition clean-center"><a href="#" class="menus-main">男装</a></div>
@@ -417,7 +424,7 @@
                   <li class="nav-item active master-navgition d-block d-md-none">
                     <div class="master-navgition clean-center" id='My-favorites'><a href="#" class="menus-main">我的最爱<span>(0)</span></a></div>
                   </li>
-                  <li class="nav-item active master-navgition d-block d-md-none">
+                  <li class="nav-item active master-navgition d-block d-md-none" id="monetary-lasted">
                     <div class="master-navgition clean-center" id='monetary'><a href="#" class="menus-main"><span>￥</span>RMB</a></div>
                   </li>
                 </ul>
@@ -427,7 +434,7 @@
       </div>
       </div>
     </header>
-    <div class="fixed-black d-md-none d-none" id='black-nav-responses'>
+    <div class="fixed-black d-md-none" id='black-nav-responses'>
       <div id="black-nav"></div>
     </div>
 
@@ -543,7 +550,7 @@
           </ol>
         </div>
       </div>
-      <div class="row clean-md-padding">
+      <!-- <div class="row clean-md-padding">
         <div class='mains-bottom-characteristic col-md-12' id='characteristic'>
           <div id="characteristic-name">
             <p>特色眼镜</p>
@@ -635,7 +642,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- 返回最顶部 -->
@@ -749,22 +756,22 @@
      $(function () {
       $('[data-toggle="tooltip"]').tooltip()
       $('#example').tooltip({ boundary: 'window' });
-      $('.glasses-nav-item').slick({
-          dots: false,
-          infinite: true,
-          speed: 1000,
-          slidesToShow: 4,
-          slidesToScroll: 4
-          // responsive: [
-          // {
-          //   breakpoint: 768,
-          //   settings: {
-          //     slidesToShow: 2,
-          //     slidesToScroll: 2
-          //   }
-          // }
-          // ]
-        });
+      // $('.glasses-nav-item').slick({
+      //     dots: false,
+      //     infinite: true,
+      //     speed: 1000,
+      //     slidesToShow: 4,
+      //     slidesToScroll: 4
+      //     // responsive: [
+      //     // {
+      //     //   breakpoint: 768,
+      //     //   settings: {
+      //     //     slidesToShow: 2,
+      //     //     slidesToScroll: 2
+      //     //   }
+      //     // }
+      //     // ]
+      //   });
 
       $('div.go-up-nav').click(function(event){
           $('body,html').animate({ scrollTop: 0 }, 550);
@@ -802,5 +809,12 @@
         });
       })
     });
+
+     // nav-bar buttons
+     $("nav.navbar-expand-md button#navbar-toggler").click(function(e){
+      $('body,html').scrollTop(0);
+      $('body').css({"overflow":"hidden","transform":"translate(0px,-87px)"});
+      $('#black-nav-responses').css('left','0')
+     });
   </script>
 </html>
