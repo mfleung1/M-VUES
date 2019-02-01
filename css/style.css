@@ -162,21 +162,23 @@ div.md-about-nav1 font.cross-buttona:after{display:inherit;width:24px;height:24p
 li#monetary-lasted{border: 1px solid #d9d9d9;margin: 0px;padding-left: 10px;border-left: 0;border-right: 0px;}
 div#search form div.form-checkout{
     border-bottom: 1px solid #d9d9d9;
-    padding: 6px 0px;
+    padding: 0 0px;
 }
 div#search form div.form-checkout input{
     outline: none;
     border: none;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 13px 0px 2px 0px;
 }
 div#search form div.form-checkout input[value]{
     color: #969696;
 }
-div#search form div#ico-search{width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-size:100%;margin:0 auto;position: absolute;right: 9px;top: 9px;}
+div#search form div#ico-search{width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-size:100%;margin:0 auto;position: absolute;right: 9px;top: 17px;}
 @media only screen and (max-width: 767px){
 div.home-banner-img div.buttons{top:5.5%;}
 header#header{position:fixed;top:0;left:0;z-index: 3;height:auto;}
+div#navbarTogglerDemo01{width: 88%;height:100%;position:fixed;top:0;left: -88%;background:#fff;z-index: 4;display: inline-block !important;}
 div#header-phone{padding: 2px 16px 5px 16px;}
 div.p-logo_head{width: 101px;}
 div.mains-content{margin-top: 87px;}
@@ -203,4 +205,5 @@ div.fixed-black{position:fixed;top:0;left:-100%;z-index:3;width:100%;height:100%
 div.fixed-black #black-nav{height:100%;background:#000;opacity:.5;}
 li.ico-shopp-nav{position: relative;bottom: -11px;}
 ul.header_display_menus li{margin: 2px 0;padding: 0 12px !important;}
+
 }
