@@ -17,8 +17,8 @@ header .phones{width:100%;text-align:center;}
 div.list:hover .tooltip_item{position:absolute;top:26px;left:-100%;z-index:5;display:block;display:inherit;padding:21px;min-width:455px;box-shadow:0 3px 4px rgba(0,0,0,.2);}
 div.list:hover .tooltip_item_help{position:absolute;top:26px;left:-50%;display:block;display:inherit;padding:21px;min-width:191px;box-shadow:0 3px 4px rgba(0,0,0,.2);}
 div.tooltip_item_help .helps_list{padding:5.5px 0;border:none;text-align:left;}
-div.header_item{margin:0 auto;padding:8px 0 1px 0;width:100%;border-bottom:1px solid #d9d9d9;}
-div.header_item0{margin:auto;width:100%;/* max-width:1281px; */}
+div.header_item{margin:0 auto;padding:8px 0 1px 0;width: 100%;border-bottom:1px solid #d9d9d9;}
+div.header_item0{margin:auto;width: 100%;/* max-width:1281px; */}
 div.header_item div.logo_head{margin:0 auto;width:100%;max-width:138px;min-width:100px;}
 div.head_right_compotent{display:inherit;padding-bottom:16px;width:100%;}
 div.head_right_compotent div#ico-search{display:inherit;width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-repeat:no-repeat;}
@@ -175,6 +175,7 @@ div#search form div.form-checkout input[value]{
     color: #969696;
 }
 div#search form div#ico-search{width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-size:100%;margin:0 auto;position: absolute;right: 9px;top: 17px;}
+
 @media only screen and (max-width: 767px){
 div.home-banner-img div.buttons{top:5.5%;}
 header#header{position:fixed;top:0;left:0;z-index: 3;height:auto;}
@@ -196,7 +197,7 @@ div.mains-right-design ol#right-ul-item li.rights-div div.contents{bottom:0;widt
 div.mains-right-design ol#right-ul-item li.rights-div{margin-bottom:29px;height:auto;}
 div.left-middle-news{overflow:hidden;}
 div.more-brands-item div#brands-item ul{grid-template-columns:1fr 1fr 1fr;grid-template-rows:32px 32px 32px 32px;}
-div.mains-content div.mains-contents-design{padding:0 13px!important;}
+div.mains-content div.mains-contents-design{padding: 0 13px!important;}
 div.left-middle-news div#contents h3{text-align:center;}
 div.left-middle-news{margin-top:4%;}
 div.left-middle-image img{display:block;width:200%;max-width:none;}

@@ -48,7 +48,7 @@ $(function(){
           step:function(now,fx){
             $(this).css({"overflow":"hidden","transform":"translate("+now+"px)"});
           },
-          duration:360
+          duration:361
         });
       $('#black-nav-responses').css({'left':'0','display':'block'});
 
@@ -62,10 +62,13 @@ $(function(){
             foo:0
             },{
             step:function(now,fx){
-              $('body').css({"overflow":"hidden","transform":"translate("+now+"px)"}) 
+              $('body').css({"overflow":"hidden","transform":"translate("+now+"px,-87px)"})
+              if(fx.now == 0){
+                $('body').attr('style','')
+              }
             },
-            duration:360
-          });
+            duration:361
+          })
           
         });
       });
