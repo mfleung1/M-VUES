@@ -1,4 +1,4 @@
-body{margin:0;padding:0;font-size:1rem;}
+body{margin:0;padding:0;font-size:1rem;overflow-x:hidden;}
 li,ol,ul{margin:0;padding:0;list-style:none;}
 
 input[type="text"] {}
@@ -55,9 +55,11 @@ ul.header_display_menus li div.master-navgition a.menus-main:hover{border-bottom
 div.general-other-item div.general-item{display:none;}
 ul.header_display_menus #eyeglasses-men:hover .general-div{display:block!important;}
 ul.header_display_menus #eyeglasses-women:hover .general-div{display: block !important;}
-ul.header_display_menus #eyeglasses-kids:hover .general-div{display:inherit!important;}
-ul.header_display_menus #sunglasses:hover .general-div{display:inherit!important;}
+ul.header_display_menus #eyeglasses-kids:hover .general-div{display:inline-block !important;}
+ul.header_display_menus #sunglasses:hover .general-div{display:inline-block !important;}
 ul.header_display_menus #own-brand:hover .general-div{display:inline-block!important;}
+ul.header_display_menus #about:hover .general-div{display:inline-block!important;}
+ul.header_display_menus #Service-advices:hover .general-div{display:inline-block!important;}
 div.general-div{position:absolute;top:37.6px;left:0;z-index:1;display:none;margin-top:0;padding:13px 0 14px 0;width:100%;border-bottom:1px solid #d9d9d9;background:#fff;max-width: 1920px;}
 button#navbar-toggler{position:absolute;top: -46px;left: 10px;border:none;outline: unset;}
 div.general-item{display:inherit;margin:0;margin:0 auto;padding:0 22px;width:100%;max-width:1280px;background:#fff;cursor:pointer;}
@@ -196,6 +198,7 @@ div.content-my{margin-bottom:9px;}
 div.mains-right-design ol#right-ul-item li.rights-div div.contents{bottom:0;width:100%;}
 div.mains-right-design ol#right-ul-item li.rights-div{margin-bottom:29px;height:auto;}
 div.left-middle-news{overflow:hidden;}
+ul.header_display_menus li div.master-navgition a.menus-main:hover{border-bottom: none;}
 div.more-brands-item div#brands-item ul{grid-template-columns:1fr 1fr 1fr;grid-template-rows:32px 32px 32px 32px;}
 div.mains-content div.mains-contents-design{padding: 0 13px!important;}
 div.left-middle-news div#contents h3{text-align:center;}

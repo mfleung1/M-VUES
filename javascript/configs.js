@@ -78,17 +78,15 @@ $(function(){
       if(currents_dev_widths < 768){
 
         $('.header_display_menus').each(function(){
-          $('li.master-navgition').find("div.general-div").mouseover(function(){
-            $(this).prev('div.master-navgition').children('a').css("border-bottom","0")
-          }).mouseout(function(){
-           $(this).prev('div.master-navgition').children('a').removeAttr("style");
-          });
+          $('li.master-navgition').find("div.master-navgition").click(function(){
+            $(this).find('a').unbind('mouseenter').unbind('mouseleave');
+          })
         })
 
         $("ul.header_display_menus").each(function(){
           $(this).find("li.master-navgition").click(function(event){
             event.preventDefault();
-            $(".general-div").animate({
+            $(this).children(".general-div").animate({
               foo:100
             },{
               step:function(now,fx){
@@ -101,7 +99,7 @@ $(function(){
 
           // back up
           $("#back-to-nav").click(function(event){
-            $(".general-div").animate({
+            $(this).parents("div.general-div").animate({
               foo:0
             },{
               step:function(now,fx){
