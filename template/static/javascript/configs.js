@@ -37,16 +37,16 @@ $(function(){
 
      // nav-bar buttons
       // nav-width 
-      var nav_widths = $("div#navbarTogglerDemo01").innerWidth();
+      var nav_widths = $("div.navbar-collapse").width();
      $("nav.navbar-expand-md button#navbar-toggler").click(function(e){
       $('body,html').animate({scrollTop:0},100);
       $("header#header").css('position','relative');
       $('div.mains-content').css('margin-top','0');
       $('body').animate({
-          foo:nav_widths
+          foo:89
           },{
           step:function(now,fx){
-            $(this).css({"overflow":"hidden","transform":"translate("+now+"px)"});
+            $(this).css({"overflow":"hidden","transform":"translate("+now+"%)"});
           },
           duration:361
         });
@@ -84,8 +84,8 @@ $(function(){
         })
 
         $("ul.header_display_menus").each(function(){
-          $(this).find("li.master-navgition").click(function(event){
-            event.preventDefault();
+          $(this).find("li.master-navgition").click(function(e){
+            $(this).find('div.master-navgition a').attr('href','javascript:void();')
             $(this).children(".general-div").animate({
               foo:100
             },{
@@ -94,21 +94,33 @@ $(function(){
               },
               duration:360
             })
-            event.stopPropagation();
+            
+            e.stopPropagation();
           })
 
           // back up
-          $("#back-to-nav").click(function(event){
-            $(this).parents("div.general-div").animate({
-              foo:0
-            },{
-              step:function(now,fx){
-                $(this).css("transform",'translate('+now+'%)');
-              },
-              duration:360
-            })
-            event.stopPropagation();
-          })
+          $(this).find("li.master-navgition").click(function(){
+           $(this).find(".general-div .back-to").click(function(event){
+              $(this).parents("div.general-div").animate({
+                foo:0
+              },{
+                step:function(now,fx){
+                  $(this).css("transform",'translate('+now+'%)');
+                },
+                duration:360
+              })
+              event.stopPropagation();
+             });
+
+          });
+        })
+
+        $('.header_display_menus').each(function(){
+          $('li.master-navgition').find("div.general-div").mouseover(function(){
+            $(this).prev('div.master-navgition').children('a').removeAttr("style");
+          }).mouseout(function(){
+           $(this).prev('div.master-navgition').children('a').removeAttr("style");
+          });
         })
       }else{
         return;
