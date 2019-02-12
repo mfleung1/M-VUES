@@ -566,8 +566,93 @@
     </div>
 
     <div class="mains-content">
-      <!-- mains -->
-
+      <div class="row">
+        <div class="d-none d-md-block breadcrumb-nav">
+          <div class="col-12 clean-md-padding">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index/index.html">首页</a></li>
+                <li class="breadcrumb-item"><a href="#">女士</a></li>
+                <li class="breadcrumb-item active" aria-current="page">光学眼镜</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="d-none d-md-block product-item-image">
+          <div class="col-12 clean-md-padding">
+            <div class="product-images-nav">
+              <div class="default-background" id="banner-main">
+                <div class='background'>
+                  <img src="../static/image/womeneyeglasses_banner.jpg" alt=""/>
+                </div>
+                <div class='info'>
+                  <h1>Fun, casual, or serious<br>Get them all here</h1>
+                </div>
+              </div>
+              <div class="hover-background" id='progressive-div'>
+                <div class='background '>
+                  <img src="../static/image/progressive_lenses_new.jpg" alt=""/>
+                </div>
+                <div class='info'>
+                  <h4>Progressive Lenses</h4>
+                Progressive lenses are the true "multifocal" lenses that provide a smooth, seamless progression of many lens powers for clear vision across all distances without excessive head movements. They resemble more closely the natural vision before presbyopia occurred. 
+                </div>
+              </div>
+              <div class="hover-background" id='transitions-div'>
+                <div class='background'>
+                  <img src="../static/image/banner-transitions-women_2x.jpg" alt=""/>
+                </div>
+                <div class='info'>
+                  <h4>Transitions Lenses</h4>
+                  Transitions lenses offer the best light control technology for double protection against UV and glare. Improved temperature stability and responsiveness of the latest series allows only the right amount of light to go through to best enhance your vision in all outdoor conditions.
+                </div>
+              </div>
+              <div class="right-info-btns">
+                <div class="right-info">
+                  <div class="item">Lens Promotion</div>
+                  <div class="item" id="progressives">
+                    <a href="javascript:void();">
+                      <img src='../static/image/banner-btn-progressive_package_2x.png' alt="">
+                    </a>
+                  </div>
+                  <div class="item" id="transition">
+                    <a href="javascript:void();">
+                      <img src='../static/image/banner-btn-transitions_package_2x_1.png' alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="black-toolpic">
+              <label>Price includes prescription lenses on selected frames. Now with virtual try on!</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block mains-item">
+        <div class='row'>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <div class="btn-group">
+                <div class="div-btn-group"></div>
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  按受欢迎程度
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">按受欢迎程度</a>
+                  <a class="dropdown-item" href="#">产品名称Asc</a>
+                  <a class="dropdown-item" href="#">产品名称esc</a>
+                  <a class="dropdown-item" href="#">价格降序</a>
+                  <a class="dropdown-item" href="#">价格升序</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">B</div>
+            <div class="col-md-3">C</div>
+        </div>
+      </div>
+    </div>
     <!-- 返回最顶部 -->
     <div class="d-block d-md-none go-up-nav">
       <button type="button" id="go-up">回滚顶部<i></i></button>
@@ -676,4 +761,29 @@
   </div>
   </body>
   <script type="text/javascript" src='../static/javascript/configs.js'></script>
+  <script type='text/javascript'>
+    $('#progressives').mouseover(function(){
+      $(".product-images-nav #progressive-div").css('display','inherit').animate({
+        opacity:'1'
+      },1000)
+    }).mouseout(function(){
+      $(".product-images-nav #progressive-div").animate({
+        opacity:'0'
+      },1000,function(){
+        $(this).removeAttr('style')
+      });
+    });
+
+    $('#transition').mouseover(function(){
+      $(".product-images-nav #transitions-div").css('display','inherit').animate({
+        opacity:'1'
+      },1000)
+    }).mouseout(function(){
+      $(".product-images-nav #transitions-div").animate({
+        opacity:'0'
+      },1000,function(){
+        $(this).removeAttr('style')
+      });
+    });
+  </script>
 </html>

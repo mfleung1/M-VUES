@@ -43,7 +43,7 @@ $(function(){
       $("header#header").css('position','relative');
       $('div.mains-content').css('margin-top','0');
       $('body').animate({
-          foo:89
+          foo:88
           },{
           step:function(now,fx){
             $(this).css({"overflow":"hidden","transform":"translate("+now+"%)"});
