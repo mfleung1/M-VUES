@@ -220,9 +220,9 @@ div#search form div#ico-search{width:25px;height:25px;background:url(../image/ic
 #moneys .submit-btn{color:#fff;background:#000;border:none;padding: 6px 10px;width: 100%;}
 .product-item{
 }
-.product-item .products{text-align:center;margin-bottom: 16px;height: 100%;position: relative;height: 436px;padding: 0px 10px;}
-.product-item .products .borders{border:1px solid rgb(217, 217, 217);height: 100%;margin: 0;}
-.product-item .products .border:hover{border:1px solid #000;text-align:center;}
+.product-item .products{text-align:center;margin-bottom: 16px;height: 100%;position: relative;height: 436px;padding: 0px 10px;z-index: 6;}
+.product-item .products .borderx{border:1px solid rgb(217, 217, 217);height: 100%;margin: 0;}
+.product-item .products .borderx:hover{border:1px solid #000;text-align:center;}
 #products-name img{width:99.99%;}
 #products-name #preferential-ico{width: 99.99%;display: inherit;padding: 0px 15px;margin-top: 16px;}
 #products-name #preferential-ico img{width:100%;max-width: 42px;display: inherit;}
@@ -242,6 +242,8 @@ div#search form div#ico-search{width:25px;height:25px;background:url(../image/ic
 #products-name ol li#select-color nav.color{
     display: inline-block;
 }
+#products-name .Quick-previews{background:#000;color:#fefefe;line-height: 2.99rem;z-index: 6;width: 99.99%;display: none;}
+#products-name:hover .Quick-previews{display: inherit;}
 @media only screen and (max-width:767px){div.home-banner-img div.buttons{top:5.5%}
 header#header{position:fixed;top:0;left:0;z-index:3;height:auto}
 div#navbarTogglerDemo01{width:88%;height:100%;position:fixed;top:0;left:-88%;background:#fff;z-index:4;display:inline-block!important}
