@@ -163,7 +163,7 @@ div#search form div.form-checkout input[value]{color:#969696;}
 div#search form div#ico-search{position:absolute;top:17px;right:9px;margin:0 auto;width:25px;height:25px;background:url(../image/icon-search-black.svg) no-repeat;background-size:100%;}
 .breadcrumb{margin-bottom:0;padding:.75em 0;background-color:unset;}
 .product-item-image .product-images-nav{position:relative;}
-.right-info-btns{position:absolute;top:0;right:0;padding:16px;width:315px;height:100%;background:rgb(0,0,0,.5);color:#fefefe;}
+.right-info-btns{position:absolute;bottom: -8px;right:0;padding:16px;width:315px;height:100%;background:rgb(0,0,0,.5);color:#fefefe;}
 .right-info-btns .right-info{display:grid;grid-template-columns:1fr;}
 .right-info-btns .right-info img{width:100%;}
 .right-info-btns .right-info .item{padding:0 0 8px 0;font-size:1.3em;}
@@ -269,6 +269,7 @@ div#product-names #moneys{white-space:nowrap;font-size:1.375rem;}
 div.Quick-previews:hover{
     background: rgb(100, 100, 100) !important;
 }
+#background0{overflow: hidden;display:inline-grid;width:100%;position: relative;bottom: -8px;}
 @media only screen and (max-width:767px){div.home-banner-img div.buttons{top:5.5%;}
 header#header{position:fixed;top:0;left:0;z-index: 4;height:auto;}
 div#navbarTogglerDemo01{position:fixed;top:0;left:-88%;z-index:4;display:inline-block!important;width:88%;height:100%;background:#fff;}
