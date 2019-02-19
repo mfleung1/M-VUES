@@ -568,7 +568,7 @@
     </div>
 
     <div class="mains-content">
-      <div class="row">
+      <div class="row clean-md-padding">
         <div class="d-none d-md-block breadcrumb-nav">
           <div class="col-12 clean-md-padding">
             <nav aria-label="breadcrumb">
@@ -671,16 +671,67 @@
             </div>
         </div>
       </div>
+      <div class="row clean-md-padding d-inline-flex d-md-none responsive-item-nav">
+        <div class="filtrates0">
+          <div class="dropdown-toggle-nav">过滤</div>
+
+        </div>
+        <div class="sorts_list">
+          <div class="dropdown-toggle-nav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="dropdown-toggle" type="button" >
+              综合排序
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="javascript:void();">按受欢迎程度</a>
+              <a class="dropdown-item" href="javascript:void();">产品名称Asc</a>
+              <a class="dropdown-item" href="javascript:void();">产品名称esc</a>
+              <a class="dropdown-item" href="javascript:void();">价格降序</a>
+              <a class="dropdown-item" href="javascript:void();">价格升序</a>
+            </div>  
+          </div>
+        </div>
+        <div class="col-12 responsive-page">
+          <div class="pages">
+            <li class="d-none" id="list-start"><span><a href="javascript:void();"></a></span></li>
+            <li class="d-none" id="list-prevn"><span><a href="javascript:void();"></a></span></li>
+            <li class="numbers"><span>1</span></li>
+            <li class="fonts"><span>&nbsp;/&nbsp;</span></li>
+            <li class="end-numer"><span>25</span></li>
+            <li class="d-block" id="list-next"><span><a href="javascript:void();"></a></span></li>
+            <li class="d-block" id="list-last"><span><a href="javascript:void();"></a></span></li>
+          </div>
+        </div>
+      </div>
       <div class="row mains-content-product-list clean-md-padding">
-        <div class="d-md-inline-block d-none col-md-3">
+        <div class="d-md-inline-block d-block clean-md-padding col-md-3">
           <div class="filtrate">
             <div class="filtrates-margins">
-              <div class="reset-nav">
+              <div class="reset-nav d-md-block d-none">
                 <button type="reset" value=''>重置所有过滤器</button>
-                <label></label>
               </div>
             </div>
             <div id="accordion">
+              <div class='back_to d-block d-md-none' id="back_to"><label>返回</label></div>
+              <!-- preferential -->
+              <div class="carts-item-comments d-block d-md-none" id='preferential'>
+                <div class="brands-inputs" id="headingOne">
+                  <div class="mb-0" data-toggle="collapse" data-target="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8">
+                    <label>促销活动</label>
+                    </div>
+                    <div id="collapseOne8" class="collapse-item collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <li class="item"><a href="javascript:void()"><font>冬季促销</font></a></li>
+                          <li class="item"><a href="javascript:void()"><font>哇 - 价格低至25美元</font></a></li>
+                          <li class="item"><a href="javascript:void()"><font>设计师品牌热卖</font></a></li>
+                          <li class="item"><a href="javascript:void()"><font>进步或过渡促进</font></a></li>
+                          <li class="item"><a href="javascript:void()"><font>精品品牌5折优惠</font></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- brands -->
               <div class="carts-item-comments" id='brands '>
                 <div class="brands-inputs" id="headingOne">
                   <div class="mb-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -903,6 +954,10 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <!-- Rest all button -->
+                <div class="reset-nav0 d-block d-md-none">
+                  <button type='button'>重置所有过滤</button>
                 </div>
             </div>
           </div>
@@ -1772,8 +1827,7 @@
         $(this).removeAttr('style')
       });
     });
-    $('.collapse').collapse('hide');
-
+    $('#preferential .collapse').collapse('show');
     // Jquery ui
     $( function() {
       $( "#slider" ).slider({
@@ -1789,6 +1843,7 @@
           " - ￥" + $( "#slider" ).slider( "values", 1 ) );
 
         //left slider btns after ico
+        $('#collapseOne8').collapse('show')
         $("#accordion").each(function(){
           $(this).find(".carts-item-comments").click(function(event){
             $(this).on('show.bs.collapse', function (){
@@ -1835,6 +1890,18 @@
         })
         $('.Quick-previews').click(function(){
           $(".detail-products-views").css("display","inherit");
+        })
+
+        $('.filtrates0 .dropdown-toggle-nav').click(function(){
+          $('#accordion').css('display',"inherit").animate({
+            opacity: 1
+          },360);
+        })
+
+        $("#accordion .back_to").click(function(){
+          $('#accordion').animate({
+            opacity: 0
+          },360).hide('slow');
         })
     });
   </script>
